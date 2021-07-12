@@ -1,0 +1,13 @@
+  
+{% extends 'base.html' %}
+
+{% block content %}
+  
+    <a style="font-style: italic; font-size: larger;" href="{%url 'snack_list'%}">Snack List</a>
+    <div style="flex-direction: row; flex-wrap: wrap; background-color: aqua; border-radius: 10px; text-align: center;">
+    <h3>Snack: {{ snack.name }}</h3>
+    <h3><p>purchaser: {{ snack.purchaser }}</p></h3>
+    <h3><p>description: {{ snack.description }}</p></h3>
+  </div>
+
+{% endblock content %}
